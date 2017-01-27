@@ -1,0 +1,11 @@
+c:\users\matt\documents\visual studio 2015\Projects\ClearSCADAExternalEditor\ClearSCADAExternalEditor\bin\Debug\ClearSCADAExternalEditor.exe.config
+c:\users\matt\documents\visual studio 2015\Projects\ClearSCADAExternalEditor\ClearSCADAExternalEditor\bin\Debug\ClearSCADAExternalEditor.exe
+c:\users\matt\documents\visual studio 2015\Projects\ClearSCADAExternalEditor\ClearSCADAExternalEditor\bin\Debug\ClearSCADAExternalEditor.pdb
+c:\users\matt\documents\visual studio 2015\Projects\ClearSCADAExternalEditor\ClearSCADAExternalEditor\obj\Debug\ClearSCADAExternalEditor.csprojResolveAssemblyReference.cache
+c:\users\matt\documents\visual studio 2015\Projects\ClearSCADAExternalEditor\ClearSCADAExternalEditor\obj\Debug\Interop.ScxV6DbClient.dll
+c:\users\matt\documents\visual studio 2015\Projects\ClearSCADAExternalEditor\ClearSCADAExternalEditor\obj\Debug\Interop.ViewX.dll
+c:\users\matt\documents\visual studio 2015\Projects\ClearSCADAExternalEditor\ClearSCADAExternalEditor\obj\Debug\Interop.VIEWXCTRLLib.dll
+c:\users\matt\documents\visual studio 2015\Projects\ClearSCADAExternalEditor\ClearSCADAExternalEditor\obj\Debug\Interop.ViewXLogic.dll
+c:\users\matt\documents\visual studio 2015\Projects\ClearSCADAExternalEditor\ClearSCADAExternalEditor\obj\Debug\ClearSCADAExternalEditor.csproj.ResolveComReference.cache
+c:\users\matt\documents\visual studio 2015\Projects\ClearSCADAExternalEditor\ClearSCADAExternalEditor\obj\Debug\ClearSCADAExternalEditor.exe
+c:\users\matt\documents\visual studio 2015\Projects\ClearSCADAExternalEditor\ClearSCADAExternalEditor\obj\Debug\ClearSCADAExternalEditor.pdb
