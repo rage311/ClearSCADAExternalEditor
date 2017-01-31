@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Diagnostics;
 using System.IO;
 
@@ -26,6 +26,8 @@ namespace ClearSCADAExternalEditor
             // Set a variable to the My Documents path.
             myDocPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             fullPath = myDocPath + @"\" + filename;
+
+            Console.WriteLine("Opening ViewX client and logging on to system...");
 
             ViewXApp = new ViewX.Application();
             if (ViewXApp.IsSystemConnected[system])
@@ -60,6 +62,8 @@ namespace ClearSCADAExternalEditor
         {
             try
             {
+                Console.WriteLine("Starting editor...");
+
                 editorProcess = Process.Start(editorFullPath, fileFullPath);
                 editorProcess.EnableRaisingEvents = true;
                 editorProcess.Exited += Process_Exited;
@@ -70,8 +74,6 @@ namespace ClearSCADAExternalEditor
                 Environment.Exit(1);
             }
         }
-
-        
 
         private static void Watcher_Changed(object sender, FileSystemEventArgs e)
         {
@@ -99,8 +101,8 @@ namespace ClearSCADAExternalEditor
         static void Main(string[] args)
         {
             Console.WriteLine(String.Join(", ", args));
-            Program.InitApp();
-            Program.OpenMimic(mimicPath);
+            InitApp();
+            OpenMimic(mimicPath);
 
             // The vim equivalent of the built-in ViewX editor settings
             string script = "'vim: set noexpandtab sts=4 ts=4 sw=4:";
@@ -135,7 +137,7 @@ namespace ClearSCADAExternalEditor
             // Just keep the main process alive while we wait for events
             while (true)
             {
-                System.Threading.Thread.Sleep(10000);
+                Thread.Sleep(10000);
             }
         }
     }
